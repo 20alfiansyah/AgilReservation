@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolanda</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <div class="h-755 flex justify-center items-center font-poppins animate__animated animate__fadeIn">
+        <div id="mainPage" class="w-4/5 flex flex-col items-center justify-center">
+            <div class="w-full font-extrabold mb-5 text-3xl">
+                <h1 class="text-black1">PLEASE INPUT<br><span class="text-biruTua ">YOUR NAME</span></h1>
+            </div>
+            <input id="nama" class=" w-full border-black border-4 p-4 rounded-2xl mb-4 active:translate-y-2  active:[box-shadow:0_0px_0_0_#000000,0_0px_0_0_#000000]
+            active:border-b-[0px]
+            transition-all duration-150 [box-shadow:0_10px_0_0_#272727,0_15px_0_0_#272727]
+            border-b-[1px]" type="text" placeholder="Your Name">
+
+            <div class="w-full font-extrabold  my-5 text-3xl">
+                <h1 class="text-black1">AND UR<br><span class="text-kuning">SPECIAL PASSWORD</span></h1>
+            </div>
+            <input id="password" class="w-full border-black border-4 p-4 rounded-2xl mb-4 active:translate-y-2  active:[box-shadow:0_0px_0_0_#272727,0_0px_0_0_#272727]
+            active:border-b-[0px]
+            transition-all duration-150 [box-shadow:0_10px_0_0_#272727,0_15px_0_0_#272727]
+            border-b-[1px]" type="text" placeholder="Your Special Password">    
+            
+            <div id="btnSend" class='my-5 button w-16 h-16 bg-white rounded-full cursor-pointer select-none
+            active:translate-y-2  active:[box-shadow:0_0px_0_0_#272727,0_0px_0_0_#272727]
+            active:border-b-[0px]
+            transition-all duration-150 [box-shadow:0_8px_0_0_#272727,0_13px_0_0_#272727]
+            border-2 border-black
+            '>
+            <span class='flex flex-col justify-center items-center h-full text-white font-bold text-lg '><img class="scale-50" src="asset/icons8-chevron-right-52.png" alt=""></span>
+            </div>
+
+            <div  class="my-5">
+                <h1 id="errMsg" class="text-xl font-extrabold text-center hidden animate-pulse">Wrong Password</h1>
+            </div>
+        </div>
+        <div id="secondPage" class="w-4/5 flex flex-col justify-center items-center font-poppins hidden">
+            <div>
+                <h1 class="font-extrabold text-4xl text-center text-black1">HELLO <span class=" text-biruTua">YOLANDA</span> <span class=" text-kuning">ARTHA</span> WOULD YOU LIKE GO ON DATE WITH ME ?</h1>
+            </div>
+            <div class="flex my-10">
+                <div id="btnYes" class='button mr-5 w-40 h-16 bg-biruTua rounded-lg cursor-pointer select-none
+                active:translate-y-2  active:[box-shadow:0_0px_0_0_#272727,0_0px_0_0_#272727]
+                active:border-b-[0px]
+                transition-all duration-150 [box-shadow:0_10px_0_0_#272727,0_15px_0_0_#272727]
+                border-2 border-black1
+                '>
+                    <span class='flex flex-col justify-center items-center h-full text-white font-bold text-lg '>YES</span>
+                </div>
+
+                <div id="btnNo" class='button w-40 h-16 bg-kuning rounded-lg cursor-pointer select-none
+                active:translate-y-2  active:[box-shadow:0_0px_0_0_#272727,0_0px_0_0_#272727]
+                active:border-b-[0px]
+                transition-all duration-150 [box-shadow:0_10px_0_0_#272727,0_15px_0_0_#272727]
+                border-2 border-black1
+                '>
+                    <span class='flex flex-col justify-center items-center h-full text-white font-bold text-lg '>NO</span>
+                </div>
+            </div>
+            <div class="flex">
+                <h1 id="rejectMsg" class="font-bold text-xl hidden">Eh Gabisa Nolak Maaf Ya 😜</h1>
+            </div>
+        </div>
+        <div id="thirdPage" class="w-4/5 flex flex-col justify-center items-center font-poppins hidden">
+            <div>
+                <h1 class="font-extrabold text-4xl text-center text-black1"> <span class=" text-biruTua">THANK</span> <span class=" text-kuning">YOU</span> <br> FOR YOUR RESERVATION</h1>
+            </div>
+            <div>
+                <h1 class="font-extrabold text-1xl text-center text-black1 mt-5 animate-pulse">CLICK THIS BUTTON TO SEE THE RUNDOWN</h1>
+            </div>
+            <div class="flex my-10">
+                <a class=" button mr-5 w-40 h-16 bg-biruTua rounded-lg cursor-pointer select-none
+                active:translate-y-2  active:[box-shadow:0_0px_0_0_#272727,0_0px_0_0_#272727]
+                active:border-b-[0px]
+                transition-all duration-150 [box-shadow:0_10px_0_0_#272727,0_15px_0_0_#272727]
+                border-2 border-black1 " href="https://drive.google.com/file/d/1-E3YlAi7fV1dQyTtSMWLhFjd6chEu--R/view?usp=drivesdk"> <span class='flex flex-col justify-center items-center h-full text-white font-bold text-lg '>RUNDOWN</span></a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
